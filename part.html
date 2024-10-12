@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>BUS RESERVATION SYSTEM</title>
+        <style>            
+            body{               
+               background-image:url(bus5.jpg);
+               background-size:cover;            
+            }
+            h1{
+                font-family: serif;
+            }
+            h2{
+                  margin-top: -80px;
+                  font-size: 2.2em;
+            }
+           .wrapper{
+                display:-webkit-flex;
+                display:-moz-flex;
+                display:-ms-flex;
+                display:-o-flex;
+                display:flex;
+                justify-content:center; 
+                align-items:center;
+                height:50vh;
+            }
+            .box{
+                color:#800080;
+                font-family:alfa slab one;
+                font-weight: 700;
+                font-size: 2em;
+                animation: blinker 1.1s linear infinite;               
+                text-shadow:0 0 20px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 100px #ffffff;
+            }
+            .blink{
+                animation: blinker 1.1s linear infinite;
+                font-family:alfa slab one;
+                font-weight: 700;
+                font-size: 2em;
+            }               
+            @keyframes blinker{
+                50%{
+                    opacity: 0;
+                }
+            }          
+          #button{
+                position: absolute; left:36%;top:27%;
+                padding:10px 20px;
+                color:white;               
+            } 
+            #button1{
+                position: absolute; left:50%;top:27%;
+                padding:10px 20px;
+                color:white; 
+            }   
+            @keyframes box{
+                0%{
+                    box-shadow:#27272c;
+                }
+                50%{
+                   box-shadow:0 0 27px; 
+                }
+                100%{
+                    box-shadow:#27272c;                    
+                }
+            }                  
+            </style>
+    </head>
+<body>
+ <center>
+    <div class="wrapper">
+        <p class="blink"><div class="box"><h2>KVPRL Bus Reservation System</h2></div></p>
+    </div>
+ </center>
+    <a href="login.html" id="button"><b><button><h1>Login As<br>User</h1></button></b></a>
+    <a href="adminhome.html" id="button1"><b><button><h1>Login As<br>Admin</h1></button></b></a> 
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>BUS RESERVATION SYSTEM</title>
+        <style>           
+            body{
+                background-image:url(bus5.jpg);
+                background-size:cover;                 
+            }
+            .container{
+                position: absolute; left:55%;top:30%;
+                transform:translate(-50%,-50%);
+            } 
+        
+          #name{
+                width:150px;
+                border:none;
+                background:transparent;
+                border-bottom:1px solid white;
+                padding:3px;
+                margin-bottom:1px;
+                color:white;
+            } 
+            #name1{
+                position: absolute;
+                left:38%;               
+                width:200px;
+                border:none;
+                background:transparent;
+                padding:6px;
+                margin-bottom:20px;
+                color:white;
+            }
+            #button
+            {               
+                padding:10px 20px;
+                background:black;
+                border-color:#800000;
+                color:white;
+                box-shadow:0 0 0 #800000;
+                animation:box 3s infinite;   
+                margin-top:10px;
+                border:none;
+                outline:none;
+                margin-left:50px;
+            } 
+            @keyframes box{
+                0%{
+                    box-shadow:#27272c;
+                }
+                50%{
+                   box-shadow:0 0 27px; 
+                }
+                100%{
+                    box-shadow:#27272c;                    
+                }
+            }           
+       </style>   
+     </head>
+    <body>
+    <form action="bookingdb.jsp" method="post">
+        <div>  
+        <center><h1>TICKET BOOKING FORM</h1>           
+            </div>
+        <div class="container">             
+            <table>
+                <tr>
+                    <td><b>PassangerName</b></td>
+                    <td><input type="text" name="PassengerName" placeholder="Enter passenger name" id="name"/></td>
+                </tr><br>
+                <tr>
+                    <td><b>Gender</b></td>
+                    <td><input type="radio" id="Gender" name="Gender" value="Male" id="name"/><b>Male</b>
+                        <input type="radio" id="Gender" name="Gender" value="Female" id="name"/><b>Female</b></td>   
+                </tr><br>                 
+                <tr>
+                    <td><b>Age</b></td>
+                    <td><input type="number" name="Age" placeholder="Enter age" id="name"/></td>
+                </tr><br>                
+                <tr> 
+                    <td><b>PhoneNumber</b></td>
+                      <td><input type="tel" name="PhoneNumber" placeholder="Enter 10 digits" id="name" required/></td>                   
+                </tr><br>        
+                 <tr>
+                    <td><b>DeparturePlace</b></td>
+                       <td><select name="DeparturePlace">
+                             <option value="Chennai">Chennai</option>
+                             <option value="Bengaluru">Bengaluru</option>
+                             <option value="Madurai">Madurai</option>
+                             <option value="Tirunelveli">Tirunelveli</option> 
+                             <option value="Trichy">Trichy</option>
+                             <option value="Vellore">Vellore</option>
+                             <option value="Kanyakumari">Kanyakumari</option>
+                             <option value="Thiruvanamalai">Thiruvanamalai</option>                             
+                           </select></td></tr><br>  
+                <tr>
+                    <td><b>DestinationPlace</b></td>
+                     <td><select name="DestinationPlace">
+                      <option value="Bengaluru">Bengaluru</option>
+                             <option value="Chennai">Chennai</option>
+                             <option value="Madurai">Madurai</option>
+                             <option value="Tirunelveli">Tirunelveli</option> 
+                             <option value="Trichy">Trichy</option>
+                             <option value="Vellore">Vellore</option>
+                             <option value="Kanyakumari">Kanyakumari</option>
+                             <option value="Thiruvanamalai">Thiruvanamalai</option>                              
+                           </select></td></tr><br>         
+                   <tr>
+                    <td><b>BusType</b></td>
+                    <td><select name="BusType">
+                <option value="Ac">A/c</option>
+                <option value="non-ac">Non-A/c</option>
+            </select></td></tr> 
+                   <tr>
+                    <td><b>Date</b></td>
+                    <form method="post" action="bookingdb.jsp">  
+                  <td><input type="date" id="Date" name="Date"> 
+</form>
+<script>
+    function validateDate() {
+        var selectedDate = document.getElementById('Date').value;
+        var currentDate = new Date().toISOString().slice(0, 10);
+        if (selectedDate < currentDate) {
+            alert("You cannot book a date in the past.");
+            return false;
+        }
+        return true;
+    }
+</script>
+                   <tr>
+                    <td><b>Number_of_Tickets</b></td>
+                    <td><input type="Number" name="Number_of_Tickets" placeholder="Enter no.of.tickets" id="name"/></td>
+                </tr><br>
+                <tr>
+                    <td><b>Amount</b></td>
+                    <td><select name="Amount">
+                            <option value="150">150</option>
+                            <option value="200">200</option>
+                            <option value="250">250</option> 
+                             <option value="300">300</option>
+                             <option value="350">350</option>
+                             <option value="400">400</option>
+                              <option value="450">450</option>
+                            <option value="500">500</option>     
+                        </select></td>
+                </tr><br>                
+            </table>                    
+                <center><input type="submit" value="submit" onclick="return validateDate()" id="button"/></center>  
+                <h2><a href="home.html" id="name1">Bill Details</a></h2>               
+    </center>     
+</form>
+</div>
+    </body>
+</html>
+

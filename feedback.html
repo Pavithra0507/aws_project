@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>BUS RESERVATION SYSTEM</title>
+        <style>          
+            body{
+               background-image:url(bus5.jpg);
+               background-size:cover;                 
+            }
+            .container{                
+                position: absolute;left:51%;top:30%;
+                transform:translate(-50%,-50%);  
+            }  
+            #name{
+                width:150px;
+                border:none;
+                background:transparent;
+                border-bottom:1px solid white;
+                padding:6px;
+                color:white;
+            } 
+           #name1{
+                color:white;
+                font-size: 1em;  
+                margin-bottom: 2px;                
+            }
+          #button
+            {  
+                padding:8px 20px;
+                background:black;
+                color:white;                  
+                border-color:#00ffff;
+                box-shadow:0 0 0 #00ffff;
+                animation:box 3s infinite; 
+            }   
+           #button1
+            {  
+                padding:10px 40px;
+                background:white;
+                color:black;                  
+                border-color:#00ffff;
+                box-shadow:0 0 0 #00ffff;
+                animation:box 3s infinite; 
+            }   
+           
+            @keyframes box{
+                0%{
+                    box-shadow:#27272c;
+                }
+                50%{
+                   box-shadow:0 0 27px; 
+                }
+                100%{
+                    box-shadow:#27272c;                   
+                }
+            }           
+         </style>   
+     </head>
+    <body>
+        <div class="container">
+        <form action="feedbackdb.jsp" method="post">   
+            <center>
+                <table>
+                    <h2>FEEDBACK FORM</h2>                   
+                <tr>               
+                    <td><b>UserName</b></td>
+                    <td><input type="text" name="UserName" placeholder="Enter username" required="required" id="name"/></td>
+                </tr><br>
+                <tr>
+                    <td><b>Feedback</b></td>
+                    <td><input type="radio" id="Feedback" name="Feedback" value="Excellent" id="name"/><b>Excellent</b>
+                        <input type="radio" id="Feedback" name="Feedback" value="Good" id="name"/><b>Good</b> 
+                        <input type="radio" id="Feedback" name="Feedback" value="Need_Improvements" id="name"/><b>Need_Improvements</b></td>                     
+                </tr><br> 
+                <tr>
+                    <td><b>Suggestions</b></td>
+                    <td><input type="text" name="Suggestions" placeholder="Enter your suggestions" id="button1"/></td>
+                </tr><br>
+                </table>               
+                <input type="submit" value="Send" id="button"/>
+                <div class="links">
+                    <h2><a href="home.html" id="name1">HOME PAGE</a></h2>
+                </div>          
+            </center>
+            </div>        
+        </form>
+ </body>
+</html>

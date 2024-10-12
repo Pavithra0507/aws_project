@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>BUS RESERVATION SYSTEM</title>
+        <style>         
+            body{
+                background-image:url(bus5.jpg);
+                background-size:cover         
+            }
+            .container{
+                position: absolute; left:55%;top:25%;
+                transform:translate(-50%,-50%);
+            } 
+          #name{
+                width:150px;
+                border:none;
+                background:transparent;
+                border-bottom:1px solid white;
+                padding:6px;
+                margin-bottom:1px;
+                color:white;
+            }   
+            #name1{
+                color:white;
+                font-size: 1em;  
+                margin-right:28px;                
+            }
+            #button
+            {               
+                padding:10px 20px;
+                background:black;
+                color:white;
+                border-color:#00ffff;
+                box-shadow:0 0 0 #00ffff;
+                animation:box 3s infinite;                              
+                margin-right:28px; 
+            }  
+            @keyframes box{
+                0%{
+                    box-shadow:#27272c;
+                }
+                50%{
+                   box-shadow:0 0 27px; 
+                }
+                100%{
+                    box-shadow:#27272c;                    
+                }
+            }                    
+       </style>   
+     </head>
+    <body>   
+        <!-- <form action="insertdb.jsp" method="post"> -->
+        <div>  
+            <center><h1>ADD BUS</h1></center>   
+        </div>
+            <div class="container">             
+                <table><center>
+                <tr>
+                    <td><b>BusNo</b></td>
+                     <td><select name="BusNo">
+                             <option value="1000">1000</option>  
+                            <option value="1001">1001</option> 
+                              <option value="1002">1002</option>  
+                              <option value="1003">1003</option>
+                               <option value="1004">1004</option>  
+                            <option value="1005">1005</option>  
+                            <option value="1006">1006</option> 
+                              <option value="1007">1007</option>  
+                              <option value="1008">1008</option>
+                            <option value="1009">1009</option>
+                           <option value="1010">1010</option>
+                            <option value="1011">1011</option> 
+                        </select></td></tr><br>  
+                </tr><br>
+                <tr>
+                    <td><b>BusType</b></td>
+                    <td><select name="BusType">
+                <option value="Ac">A/c</option>
+                <option value="non-ac">Non-A/c</option>
+            </select></td></tr>
+                <tr>
+                    <td><b>DeparturePlace</b></td>
+                       <td><select name="DeparturePlace">
+                             <option value="Chennai">Chennai</option>
+                             <option value="Bengaluru">Bengaluru</option>
+                             <option value="Madurai">Madurai</option>
+                             <option value="Tirunelveli">Tirunelveli</option> 
+                             <option value="Trichy">Trichy</option>
+                             <option value="Vellore">Vellore</option>
+                             <option value="Kanyakumari">Kanyakumari</option>
+                             <option value="Thiruvanamalai">Thiruvanamalai</option>                             
+                           </select></td></tr><br>  
+                <tr>
+                    <td><b>Destination</b></td>
+                     <td><select name="Destination">
+                      <option value="Bengaluru">Bengaluru</option>
+                             <option value="Chennai">Chennai</option>
+                             <option value="Madurai">Madurai</option>
+                             <option value="Tirunelveli">Tirunelveli</option> 
+                             <option value="Trichy">Trichy</option>
+                             <option value="Vellore">Vellore</option>
+                             <option value="Kanyakumari">Kanyakumari</option>
+                             <option value="Thiruvanamalai">Thiruvanamalai</option> 
+                             
+                           </select></td></tr><br>         
+                <tr>
+                    <td><b>Date</b></td>
+                    <td><input type="date" name="Date" placeholder="YYYY-MM-DD" id="name"/></td>
+                </tr><br>                                        
+                <tr>
+                    <td><b>StartTime</b></td>
+                    <td><select name="StartTime">
+                    <option value="5 PM">5 PM</option>
+                             <option value="7 PM">7 PM</option>
+                             <option value="10 AM">10 AM</option>
+                             <option value="3 PM">3 PM</option> 
+                             <option value="12 PM"> 12PM</option>
+                             <option value="11 AM">11 AM</option>
+                             <option value="8 PM">8 PM</option>
+                               <option value="4 PM">4 PM</option>
+                           </select></td></tr><br>
+                </tr><br>
+                <tr>
+                    <td><b>EndTime</b></td>
+                    <td><select name="EndTime">                   
+                             <option value="10 PM">10 PM</option>
+                             <option value="9 PM">9 PM</option>
+                             <option value="4 PM">4 PM</option>
+                             <option value="2 PM">2 PM</option>    
+                             <option value="10 AM">10 AM</option>
+                             <option value="12 PM">12 PM</option>
+                             <option value="7 PM">7 PM</option>
+                             <option value="5 PM">5 PM</option>  
+                             
+                           </select></td></tr><br>  
+                </tr><br>  
+                <tr>
+                    <td><b>TicketAmount</b></td>
+                    <td><select name="TicketAmount">
+                                <option value="150">150</option>
+                                 <option value="200">200</option>
+                                <option value="250">250</option> 
+                             <option value="300">300</option>
+                             <option value="350">350</option>
+                             <option value="400">400</option>
+                              <option value="450">450</option>
+                            <option value="500">500</option>     
+                        </select></td></tr><br>                  
+                </table></center><br>
+                <center><input type="submit" value="Insert" id="button"/></center> 
+                <center><h2><a href="adminhome.html" id="name1">HOME</a></h2></center>               
+    </center>     
+</form>
+</div>
+        </body>
+</html>

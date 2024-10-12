@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <title>BUS RESERVATION SYSTEM</title>
+        <style>
+            body{
+                background-image:url(bus5.jpg);
+                background-size:cover;                
+            }
+            .container{
+               position: absolute; left:51%;top:28%;
+               transform:translate(-50%,-50%);
+            }            
+            #name{
+                width:150px;
+                border:none;
+                background:transparent;
+                border-bottom:1px solid white;
+                padding:6px;
+                color:white;
+            } 
+            #button
+            {  
+                padding:10px 20px;
+                background:black;
+                color:white;                  
+                border-color:#00ffff;
+                box-shadow:0 0 0 #00ffff;
+                animation:box 3s infinite; 
+            }   
+              @keyframes box{
+                0%{
+                    box-shadow:#27272c;
+                }
+                50%{
+                   box-shadow:0 0 27px; 
+                }
+                100%{
+                    box-shadow:#27272c;                    
+                }
+            }                    
+         </style>   
+        </head>
+    <body>    
+        <!-- <form action="registerpgdb.jsp" method="post"> -->
+            <div>  
+                <center><h2>REGISTRATION FORM</h2>                    
+            </div>
+            <div class="container">
+            <table>
+                <tr>
+                    <td><b>FirstName</b></td>
+                    <td><input type="text" name="FirstName"  placeholder="Enter firstname" id="name"/></td>
+                </tr><br>
+                <tr>
+                    <td><b>LastName</b></td>
+                    <td><input type="text" name="LastName" placeholder="Enter lastname" id="name"/></td>
+                </tr><br>
+                <tr>
+                    <td><b>Age</b></td>
+                    <td><input type="number" name="Age" placeholder="Enter age" id="name"/></td>
+                </tr><br>
+                <tr>
+                    <td><b>UserName</b></td>
+                    <td><input type="text" name="UserName" placeholder="Enter username" id="name"/></td>
+                </tr><br>
+                <tr>
+                    <td><b>Password</b></td>
+                    <td><input type="password" name="Password" placeholder="Enter password" id="name"/></td>
+                </tr><br>
+                <tr>
+                    <td><b>ConfirmPassword</b></td>
+                    <td><input type="password" name="ConfirmPassword" placeholder="Enter password" id="name"/></td>
+                </tr><br>                
+                <tr>
+                    <td><b>Email</b></td>
+                    <td><input type="text" name="Email" placeholder="Enter emailid" id="name"/></td>
+                </tr><br></table>
+                <center><input type="submit" value="Register" id="button"/></center>     
+                <div class="links">
+                    <center><h2><a href="login.html" id="name1">Go to Login</a></h2></center>
+                </div>
+</form>  
+        </div>
+    </body>
+</html>
+

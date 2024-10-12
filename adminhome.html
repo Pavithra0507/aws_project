@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>BUS RESERVATION SYSTEM</title><style>           
+            body{
+                background-image:url(bus5.jpg);
+                background-size:cover;
+            }
+             .wrapper{
+                display:-webkit-flex;
+                display:-moz-flex;
+                display:-ms-flex;
+                display:-o-flex;
+                display:flex;
+                justify-content:left;
+                align-items:left;
+                margin-left: 20px;
+                margin-top: 5px;
+                height:50vh;
+            }
+            .box{
+                color:#800000;
+                animation: blinker 1.4s linear infinite;               
+                font-family:alfa slab one;
+                font-weight: 700;
+                font-size: 2em;                              
+                text-shadow:0 0 20px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff,0 0 100px #ffffff;
+            }
+            .blink{ 
+                color:#800000;                 
+                animation: blinker 1.4s linear infinite;
+                font-family:alfa slab one;
+                font-weight: 700;
+                font-size: 2em;
+            }               
+            @keyframes blinker{
+                50%{
+                    opacity: 0;
+                }
+            }                    
+            #button{
+                position: absolute; left:47%;top:4.8%;
+                text-align:horizontal;
+                background:transparent; 
+                padding:10px 20px;
+                border-color:800000;
+                box-shadow:0 0 0 #800000;
+                animation:box 3s infinite;
+                color:white;                      
+            } 
+            #button1{
+                position: absolute; left:55%;top:5%;
+                text-align:horizontal;                
+                background:transparent; 
+                padding:10px 20px;
+                 border-color:#228b22;
+                box-shadow:0 0 0 #228b22;
+                animation:box 3s infinite; 
+                color:white;               
+}
+            #button2{
+                position: absolute; left:64%;top:5%;
+                text-align:horizontal;
+                background:transparent; 
+                padding:10px 20px;
+                border-color: #FF4500;
+                box-shadow: 0 0 0 #FF4500; 
+                animation:box 3s infinite;
+                color:white;               
+            }
+            #button3{
+                position: absolute; left:73%;top:5%;
+                text-align:horizontal;
+                background:transparent; 
+                padding:10px 20px;
+                 border-color:#fff01f;
+                box-shadow:0 0 0 #fff01f;
+                animation:box 3s infinite;
+                color:white;               
+            }
+            #button5{
+                position: absolute; left:83%;top:5%;
+                text-align:horizontal;
+                background:transparent; 
+                padding:10px 20px;
+                border-color:pink;
+                box-shadow:0 0 0 pink;
+                animation:box 3s infinite;
+                color:white;               
+            } 
+            #button4{
+                position: absolute; left:93%;top:5%;
+                text-align:horizontal;
+                background:transparent; 
+                padding:10px 20px;
+                border-color:white;
+                box-shadow:0 0 0 white;
+                animation:box 3s infinite;
+                color:white;               
+            } 
+            @keyframes box{
+                0%{
+                    box-shadow:#27272c;
+                }
+                50%{
+                   box-shadow:0 0 27px; 
+                }
+                100%{
+                    box-shadow:#27272c;
+                    
+                }
+            }                       
+     </style>   
+    </head>
+    <body>
+        <nav>
+            <label class="logo">
+                   <div class="wrapper">
+                   <p class="blink"><div class="box"><h2>KVPRL Bus<br>Reservation System</h2></div></p>
+                   </div></label>            
+                <a href="adminhome.html"><b><input type="button" value="Home" id="button"/></b></a>
+                <a href="adminhome.html"><b><input type="button" value="Register" id="button1"/></b></a>
+                <a href="adminhome.html"><b><input type="button" value="Booking" id="button2"/></b></a>
+                <a href="insert.html"><b><input type="button" value="Insert Bus" id="button3"/></b></a>
+                <a href="adminhome.html"><b><input type="button" value="Feedback" id="button5"/></b></a>
+                <a href="welcome.html"><b><input type="button" value="Logout" id="button4"/></b></a>           
+        </nav>
+    </body>
+</html>
